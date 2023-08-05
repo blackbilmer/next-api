@@ -1,0 +1,234 @@
+.header {
+  
+  position: relative;
+  width: 100%;
+  
+  &::after{
+    position: absolute;
+    content: '';
+    z-index: -2;
+    background: #032963;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  &::before{
+    content: '';
+    background-image: url(../LOGOS.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    filter: grayscale(100%);
+  }
+  
+
+  &-top {
+    height: 72px;
+    border-bottom: 1px solid rgb(155, 155, 155);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      // gap: 20px;
+      // margin-left: 30px;
+
+      &-span {
+        height: 20px;
+        border-left: 1px solid rgb(155, 155, 155);
+      }
+    }
+    &-item {
+      padding: 0 10px;
+    }
+    &-link {
+      font-weight: 600;
+      font-size: 16px;
+      color: #fff;
+      transition: 0.4s;
+
+      &:hover {
+        color: #003d98;
+      }
+    }
+
+    &-register {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-list {
+        margin-left: 40px;
+      }
+    }
+    &-search-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-search-icon {
+      font-size: 16px;
+      color: #fff;
+      transition: 0.4s;
+
+      &:hover {
+        color: #003d98;
+      }
+    }
+  }
+  &-bottom {
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-link-group {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-link-home-logo {
+      width: 192px;
+    }
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &-item {
+      padding: 10px 20px;
+    }
+    &-link {
+      font-weight: 700;
+      font-size: 16px;
+      color: #fff;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      transition: 0.4s;
+
+      &:hover {
+        color: #003d98;
+      }
+    }
+
+    &-icon-list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    &-icon-item {
+      background: #000;
+      width: 22px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+
+      &:hover {
+        .header-bottom-icon-link {
+          color: #003d98;
+        }
+      }
+
+      & a {
+        // width: 0;
+        // height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &-icon-link {
+      color: #fff;
+      font-size: 16px;
+      transition: 0.4s;
+    }
+  }
+}
+
+.nav {
+  background: #fff;
+  height: 72.95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0,0,0,.25), 0 1px 3px rgba(0,0,0,.3);
+  z-index: -99;
+
+  &-news {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-btn {
+        font-size: 16px !important;
+        font-weight: 600;
+        text-transform: capitalize;
+        // font-stretch: normal;
+        // font-style: normal;
+        // line-height: 1.56;
+        // letter-spacing: normal;
+        
+        width: 120px !important;
+        height: 32.95px !important;
+        background: #000 !important;
+        color: #fff !important;
+        box-shadow: 0 0 0 0 rgba(155, 155, 155, 0) !important;
+        margin-right: 30px;
+      }
+      &-text{
+        font-size: 15px;
+        color: #000;
+      }
+    }
+  }
+  &-news-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+   
+    &-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &:nth-last-child(1){
+            margin-left: 1rem;
+        }
+        
+        & span{
+            font-size: 16px;
+            font-weight: 600;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.56;
+            letter-spacing: normal;
+            color: red;
+        }
+    }
+  }
+}
